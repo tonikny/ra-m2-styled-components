@@ -1,12 +1,9 @@
-# Ejercicio useState y useEffect
+# App Name
 
-## Uso:
+## Usage:
 
-- Instalar dependencias:
-```bash
-npm install
-```
-- Ejecutar:
-```bash
-npm run dev
-```
+- **dev**: start dev server
+- **build**: build for production
+- **preview**: locally preview production build
+
+

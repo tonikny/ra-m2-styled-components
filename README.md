@@ -1,4 +1,4 @@
-<h1> Project </h1>
+<h1> React App Skeleton  </h1>
 
 - [Usage:](#usage)
 - [Recommended VSCode extensions:](#recommended-vscode-extensions)
