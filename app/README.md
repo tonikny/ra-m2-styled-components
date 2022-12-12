@@ -2,8 +2,8 @@
 
 ## Usage:
 
-- **dev**: start dev server
-- **build**: build for production
-- **preview**: locally preview production build
+- **npm run dev**: start dev server
+- **npm run build**: build for production
+- **npm run preview**: locally preview production build
 
 
