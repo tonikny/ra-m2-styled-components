@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexBox } from '../../styles'
+import { Title } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
   padding-left: 2rem;
@@ -10,7 +11,9 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
+      <div>
+        <Title level="1">MIPISO.com</Title>
+      </div>
       <div>
         <ul>
           <li>Buscador</li>
