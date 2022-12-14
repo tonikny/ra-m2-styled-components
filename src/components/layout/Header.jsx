@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
-import { Title } from '../atoms'
+import { dimensions, FlexBox } from '../../styles'
+import { Title, Icon } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
   padding-left: 2rem;
@@ -11,9 +11,11 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <div>
+      <FlexBox direction="row" align="center">
+        {' '}
+        <Icon iconName="home" size={dimensions.font.h1} />
         <Title level="1">MIPISO.com</Title>
-      </div>
+      </FlexBox>
       <div>
         <ul>
           <li>Buscador</li>
