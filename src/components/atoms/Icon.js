@@ -5,7 +5,6 @@ const Icon = styled.span.attrs(({ iconName }) => ({
   children: iconName || 'help',
   className: 'material-symbols-rounded',
 }))`
-  padding: 4px;
   font-size: ${({ size }) => size || dimensions.font.base};
   font-variation-settings: ${({ fill, wght, grad, opsz }) => `
       'FILL' ${fill || 1},

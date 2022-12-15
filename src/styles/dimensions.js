@@ -14,6 +14,11 @@ const dimensions = {
     h5: "14px",
     h6: "13px",
   },
+  card: {
+    radius: "5px",
+    height: "180px",
+    width: "120px"
+  }
 };
 
 export default dimensions

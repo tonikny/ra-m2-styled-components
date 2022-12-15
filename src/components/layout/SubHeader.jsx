@@ -6,8 +6,8 @@ import { Title } from '../atoms'
 const SubHeaderStyled = styled(FlexBox)`
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   background-color: lightblue;
 
   &:hover {
