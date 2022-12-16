@@ -5,6 +5,10 @@ const colors = {
     base: '#444',
     headings: '#121212',
   },
+  button: {
+    background: '#5b3f7c',
+    textColor: 'white'
+  }
 }
 
 export default colors

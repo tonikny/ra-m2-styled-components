@@ -17,9 +17,15 @@ function Header() {
         <Title level="1">MIPISO.com</Title>
       </FlexBox>
       <MenuList>
-        <li>Buscador</li>
-        <li>Datos</li>
-        <li>Mi Perfil</li>
+        <li>
+          <a href="/">Buscador</a>
+        </li>
+        <li>
+          <a href="/">Datos</a>
+        </li>
+        <li>
+          <a href="/">Mi Perfil</a>
+        </li>
       </MenuList>
     </HeaderStyled>
   )

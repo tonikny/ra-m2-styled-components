@@ -1,21 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { colors } from '../../styles'
+import styled from 'styled-components'
+import { colors, dimensions } from '../../styles'
 
-export default function Button({
-  children,
-  color = colors.main,
-  onClick = () => {},
-}) {
+const ButtonStyled = styled.button`
+  background-color: ${({ color }) => color || colors.button.background};
+  color: ${({ textColor }) => textColor || colors.button.textColor};
+  border: 0;
+  border-radius: ${dimensions.card.radius};
+  padding: 5px 10px;
+  cursor: pointer;
+`
+
+export default function Button({ children, ...rest }) {
   return (
-    <button type="button" onClick={onClick} style={{ backgroundColor: color }}>
+    <ButtonStyled type="button" {...rest}>
       {children}
-    </button>
+    </ButtonStyled>
   )
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  onClick: PropTypes.func,
 }

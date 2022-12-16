@@ -1,10 +1,10 @@
-import HouseCard from './components/molecules/HouseCard'
+import { Houses } from './components/organisms'
 import { Body } from './components/layout'
 
 function App() {
   return (
     <Body>
-      <HouseCard color="purple" />
+      <Houses />
     </Body>
   )
 }

@@ -8,5 +8,8 @@ const MenuList = styled.ul`
   li {
     margin-left: 5px;
   }
+  a {
+    text-decoration: none;
+  }
 `
 export default MenuList

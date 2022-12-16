@@ -1,12 +1,10 @@
 import styled from 'styled-components'
-import { colors, dimensions, FlexBox } from '../../styles'
+import { dimensions, FlexBox } from '../../styles'
 
 const Card = styled(FlexBox)`
-  border: ${({ border }) => border || 'none'};
-  border-radius: ${({ radius }) => radius || dimensions.radius};
-  height: ${({ height }) => height || dimensions.card.height};
-  width: ${({ width }) => width || dimensions.card.width};
-  background-color: ${({ color }) => color || colors.secondary};
+  border-width: ${({ border }) => border || '1px'};
+  border-radius: ${({ radius }) => radius || dimensions.card.radius};
+  background-color: ${({ color }) => color || ""};
 `
 
 export default Card

@@ -15,9 +15,9 @@ const dimensions = {
     h6: "13px",
   },
   card: {
-    radius: "5px",
+    radius: "6px",
     height: "180px",
-    width: "120px"
+    gap: "1.5em"
   }
 };
 
