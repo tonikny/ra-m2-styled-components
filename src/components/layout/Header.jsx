@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { dimensions, FlexBox } from '../../styles'
-import { Title, Icon } from '../atoms'
+import { FlexBox } from '../../styles'
+import { Title } from '../atoms'
 import { MenuList } from '../molecules'
 
 const HeaderStyled = styled(FlexBox)`
@@ -12,19 +13,17 @@ function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
       <FlexBox direction="row" align="center">
-        {' '}
-        <Icon iconName="home" size={dimensions.font.h1} />
         <Title level="1">MIPISO.com</Title>
       </FlexBox>
       <MenuList>
         <li>
-          <a href="/">Buscador</a>
+          <Link to="/">Buscador</Link>
         </li>
         <li>
-          <a href="/">Datos</a>
+          <Link to="/data">Datos</Link>
         </li>
         <li>
-          <a href="/">Mi Perfil</a>
+          <Link to="/profile">Mi Perfil</Link>
         </li>
       </MenuList>
     </HeaderStyled>
