@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { dimensions, FlexBox } from '../../styles'
-import { Button, Card, Title } from '../atoms'
+import { Button, Card, Text } from '../atoms'
 
 const CardHouseStyled = styled(Card)`
   img {
@@ -18,8 +18,10 @@ const CardHouseStyled = styled(Card)`
 const TextDiv = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   width: 100%;
+  height: 100%;
 `
 
 function CardHouse({ title, price, image, link, ...rest }) {
@@ -27,9 +29,7 @@ function CardHouse({ title, price, image, link, ...rest }) {
     <CardHouseStyled {...rest}>
       <img src={image} alt={title} />
       <TextDiv>
-        <Title level="6" padBottom="4px">
-          {title}
-        </Title>
+        <Text>{title}</Text>
         <FlexBox direction="row" justify="space-between" align="center">
           {price}€{' '}
           <a href={link}>
