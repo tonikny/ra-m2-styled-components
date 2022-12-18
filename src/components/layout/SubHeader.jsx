@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FlexBox } from '../../styles'
 import { Title } from '../atoms'
 
+// Le faltan los select y el icono de buscar
 const SubHeaderStyled = styled(FlexBox)`
   padding-left: 2rem;
   padding-right: 2rem;

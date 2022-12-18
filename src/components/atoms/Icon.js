@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { dimensions } from '../../styles';
+import { dimensions } from '../../styles'
 
 const Icon = styled.span.attrs(({ iconName }) => ({
-  children: iconName || 'help',
+  children: iconName || 'help', // bien traido
   className: 'material-symbols-rounded',
 }))`
   font-size: ${({ size }) => size || dimensions.font.base};
@@ -11,8 +11,7 @@ const Icon = styled.span.attrs(({ iconName }) => ({
       'wght' ${wght || 400},
       'GRAD' ${grad || 0},
       'opsz' ${opsz || 48}
-      `
-  };
-`;
+      `};
+`
 
 export default Icon
