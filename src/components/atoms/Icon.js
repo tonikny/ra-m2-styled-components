@@ -13,6 +13,10 @@ const Icon = styled.span.attrs(({ iconName }) => ({
       'opsz' ${opsz || 48}
       `
   };
+  background-color: cyan;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px gray inset;
+  padding: 3px;
 `;
 
 export default Icon

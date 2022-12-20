@@ -13,7 +13,7 @@ const CardHouseStyled = styled(Card)`
     object-fit: cover;
   }
   justify-content: space-between;
-  box-shadow: 1px 1px 1px ${({ shadowColor }) => shadowColor || 'black'};
+  box-shadow: 1px 1px 10px ${({ shadowColor }) => shadowColor || 'grey'};
 `
 const TextDiv = styled.div`
   display: flex;

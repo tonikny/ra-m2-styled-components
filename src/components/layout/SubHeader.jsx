@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
-import { Title } from '../atoms'
+import { dimensions, FlexBox } from '../../styles'
+import { Icon } from '../atoms'
+import SelectCiudad from '../organisms/SelectCiudad'
+import SelectTipoInmueble from '../organisms/SelectTipoInmueble'
 
 const SubHeaderStyled = styled(FlexBox)`
+  flex-direction: row;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 0em;
-  padding-bottom: 0em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: lightblue;
 
   &:hover {
@@ -19,7 +22,10 @@ const SubHeaderStyled = styled(FlexBox)`
 function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled {...props}>
-      <Title level="2">Subheader</Title>
+      <SelectTipoInmueble />
+      <SelectCiudad />
+
+      <Icon iconName="search" size={dimensions.font.h3} />
     </SubHeaderStyled>
   )
 }
