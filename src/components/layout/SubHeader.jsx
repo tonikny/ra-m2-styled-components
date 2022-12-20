@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { dimensions, FlexBox } from '../../styles'
 import { Icon } from '../atoms'
-import SelectCiudad from '../organisms/SelectCiudad'
-import SelectTipoInmueble from '../organisms/SelectTipoInmueble'
+import { SelectCiudad, SelectTipoInmueble } from '../organisms'
 
 const SubHeaderStyled = styled(FlexBox)`
   flex-direction: row;
